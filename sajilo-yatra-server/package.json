@@ -1,0 +1,25 @@
+{
+  "name": "sajilo-yatra-server",
+  "version": "1.0.0",
+  "description": "this is the folder for the backend setup of the sajilo-yatra application",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "dev":"nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "react",
+    "MERN",
+    "fullstack",
+    "fullstack-application",
+    "Web-application"
+  ],
+  "author": "Biswash Khanal",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
