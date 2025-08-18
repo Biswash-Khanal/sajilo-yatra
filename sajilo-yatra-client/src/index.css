@@ -1,1 +1,27 @@
+/* Import from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  /* Custom colors for tailwind to use */
+  --color-primary: #a4907c;
+  --color-secondary: #ffd369;
+  --color-background: #2b2b2b;
+  --color-text: #f5f5dc;
+
+  /* Custom fonts imported from google ^  */
+  --font-bitcount: "Bitcount", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
+  --font-inter: "Inter", "sans-serif";
+  --font-dm: "DM Sans", "sans-serif";
+  --font-space: "Space Grotesk", "sans-serif";
+  --font-manrope: "Manrope", "sans-serif";
+  --font-urbanist: "Urbanist", "sans-serif";
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text font-urbanist;
+  }
+}
