@@ -1,15 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router'
+import { navLinks } from "../assets/assets";
+import NavigationItem from "./NavigationItem";
 
 const NavBar = () => {
   return (
-    <nav>
-        <div>NavBar component</div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+    <nav className="fixed w-full  bottom-0 p-1 bg-secondary text-primary">
+      <ul className=" border-red-500 flex justify-around p-1">
+        {navLinks.map(({ name, link, icon }) => {
+          return (
+            <li key={name}>
+              <NavigationItem
+                name={name}
+                link={link}
+                icon={icon}
+              />
+            </li>
+          );
+        })}
+      </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
