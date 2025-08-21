@@ -11,7 +11,7 @@ const navItemIconSize = 20;
 
 export const navLinks = [
   {
-    name: "vehicles",
+    name: "Vehicles",
     link: "/vehicles",
     icon: (
       <BusFront
@@ -22,7 +22,7 @@ export const navLinks = [
   },
   {
     name: "Routes",
-    link: "/route",
+    link: "/routes",
     icon: (
       <Route
         size={navItemIconSize}
@@ -41,8 +41,8 @@ export const navLinks = [
     ),
   },
   {
-    name: "Fare",
-    link: "/fare",
+    name: "Fares",
+    link: "/fares",
     icon: (
       <DollarSign
         size={navItemIconSize}
@@ -51,7 +51,7 @@ export const navLinks = [
     ),
   },
   {
-    name: "feedback",
+    name: "Feedback",
     link: "/feedback",
     icon: (
       <MessagesSquare

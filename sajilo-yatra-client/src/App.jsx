@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router";
 import HomePage from "./pages/HomePage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
-import ContactPage from "./pages/ContactPage.jsx";
-import NavBar from "./components/NavBar.jsx";
-import About1 from "./pages/About1.jsx";
-import About2 from "./pages/About2.jsx";
 
+import NavBar from "./components/NavBar.jsx";
+
+import VehiclesPage from "./pages/VehiclesPage.jsx";
+import RoutesPage from "./pages/RoutesPage.jsx";
+import FaresPage from "./pages/FaresPage.jsx";
+import FeedbackPage from "./pages/FeedbackPage.jsx";
 
 const App = () => {
   return (
@@ -13,29 +14,26 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route
-          path="/"
-          element={<HomePage />}
+          path="/vehicles"
+          element={<VehiclesPage />}
         />
         <Route
-          path="/about"
-          element={<AboutPage />}
-        >
-          <Route
-            path="about1"
-            element={<About1 />}
-          />
-          <Route
-            index
-            element={<p>Select an about...</p>}
-          />
-          <Route
-            path="about2"
-            element={<About2 />}
-          />
-        </Route>
+          path="/routes"
+          element={<RoutesPage />}
+        />
         <Route
-          path="/contact"
-          element={<ContactPage />}
+          path="/home"
+          element={<HomePage />}
+        />
+
+        <Route
+          path="/fares"
+          element={<FaresPage />}
+        />
+
+        <Route
+          path="/feedback"
+          element={<FeedbackPage />}
         />
       </Routes>
     </>

@@ -21,7 +21,31 @@
 }
 
 @layer base {
+  html {
+    @apply text-[12px] sm:text-[14px] md:text-[16px];
+  }
+
   body {
     @apply bg-background text-text font-urbanist;
+  }
+
+  h1 {
+    @apply text-3xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+
+  h3 {
+    @apply text-xl font-medium;
+  }
+
+  h4 {
+    @apply text-lg font-thin;
+  }
+
+  p {
+    @apply text-sm;
   }
 }
