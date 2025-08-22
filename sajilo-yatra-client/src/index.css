@@ -22,7 +22,7 @@
 
 @layer base {
   html {
-    @apply text-[12px] sm:text-[14px] md:text-[16px];
+    @apply text-[1.2vw] ;
   }
 
   body {
