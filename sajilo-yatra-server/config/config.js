@@ -1,7 +1,11 @@
-//this is the config.js file
 import dotenv from "dotenv";
+
+//*     dotenv is only configured if the node environment is not set to "production"
 if (process.env.NODE_ENV !== "production") dotenv.config();
 
+// *    function to check and fetch the environment variables
+//     throws an error if the environment variable is not found,
+//     or in case it is set to null||undefined
 function checkAndFetchEnvironmentVariables(
   variableName,
   defaultValue = undefined,
