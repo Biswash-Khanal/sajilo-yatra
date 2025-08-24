@@ -8,14 +8,7 @@ import { AppError } from "./utils/AppError.js";
 
 const app = express();
 
-app.get("/", (req, res, next) => {
-  try {
-    throw new AppError("abcd", 400);
-    
-  } catch (error) {
-    next(error);
-  }
-});
+app.use("/home", )
 
 app.use(errorMiddleWare);
 
