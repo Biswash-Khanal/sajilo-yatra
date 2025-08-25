@@ -1,14 +1,22 @@
-//this is the app.js file
-
 import express from "express";
 
 import { env } from "./config/config.js";
 import { errorMiddleWare } from "./middlewares/error.middleware.js";
-import { AppError } from "./utils/AppError.js";
+import { homeRouter } from "./routers/home.router.js.js";
+import { fareRouter } from "./routers/fare.router.js";
+import { routeRouter } from "./routers/route.router.js";
+import { vehicleRouter } from "./routers/vehicle.router.js";
 
 const app = express();
 
-app.use("/home", )
+app.get("/", (req, res) => {
+  res.send("Server is running!");
+});
+
+app.use("/api/home", homeRouter);
+app.use("/api/fare", fareRouter);
+app.use("/api/routes", routeRouter);
+app.use("/api/vehicles", vehicleRouter);
 
 app.use(errorMiddleWare);
 
