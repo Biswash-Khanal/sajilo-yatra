@@ -13,6 +13,8 @@ app.get("/", (req, res) => {
   res.send("Server is running!");
 });
 
+app.use(express.urlencoded({extended:true}))
+
 app.use("/api/home", homeRouter);
 app.use("/api/fare", fareRouter);
 app.use("/api/routes", routeRouter);
