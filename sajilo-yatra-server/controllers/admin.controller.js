@@ -1,7 +1,5 @@
 import { Router } from "express";
 
-export const adminRouter = Router();
-
-adminRouter.get("", (req, res) => {
-  console.log("Admin connected!");
-});
+export const adminLogin = (req, res) => {
+  res.send("Admin login");
+};
