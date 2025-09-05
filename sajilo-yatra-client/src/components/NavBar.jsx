@@ -1,3 +1,4 @@
+//this is the navigation bar for the entire app
 import { navLinks } from "../assets/assets";
 import NavigationItem from "./NavigationItem";
 
